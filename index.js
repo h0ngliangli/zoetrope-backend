@@ -20,8 +20,9 @@ webapp.get("/", (req, res) => {
 webapp.use("/flashcard", api)
 
 // start the server
-webapp.listen(env.port, () => {
-  logger.info(`api-server is running on port ${env.port}`)
+const port = process.env.PORT
+webapp.listen(port, () => {
+  logger.info(`api-server is running on port ${port}`)
 })
 
 // close the server when SIGINT

@@ -1,5 +1,4 @@
 export default {
-  port: 3000,
   db_impl: "./db_mongodb.js",
   storage_impl: "./db_gc_storage.js",
   mongodb: {
